@@ -1,7 +1,7 @@
 jQuery(function ($) {
 	$('button.show-popup').click(function () {
 		$('div.popup').fadeIn(500);
-		$(".widget-area .textwidget").append("<div id='overlay'></div>");
+		$("body").append("<div id='overlay'></div>");
 		$('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
 		return false;				
 	});	
